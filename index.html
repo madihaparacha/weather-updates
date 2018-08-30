@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\weather-icons-wind.css">
+    <link rel="stylesheet" href="css\weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css\weather-icons.css">
+    <link rel="stylesheet" href="css\weather-icons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body> 
+         <div class="header">
+        <h1 style="text-align: center">ENTER CITY NAME TO GET WEATHER UPDATES</h1>
+    <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter City Name" aria-label="Recipient's username" aria-describedby="basic-addon2"
+            onkeydown = "if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+            <div class="input-group-append" onclick="getWeather()">
+              <span class="input-group-text btn btn-outline-dark" id="btnSearch"><i class="fas fa-search" id="icons"></i></span>
+            </div>
+            </div>
+    <div class="container">
+    <div class="weather-info">
+        <div>
+            <h1 class="city-name"></h1>
+        </div>
+        <i class="weather-icon"></i>
+    <h3 class="current-temp"><span></span>°</h3>
+    <p class="temp-vary"><span class="min"></span>°/<span class="max"></span>°</p>
+    <p class="description"></p>
+    </div>
+    </div>
+    <div class="box">
+    <div class="weather-forecast">
+        <section>
+            <p class="monday"></p>
+              <img src="" alt="" class="icons-mon">
+            <i class="icon1"></i>
+            <p class="exp-temp-mon"></p>
+        </section>
+        <section>
+            <p class="tuesday"></p>
+              <img src="" alt="" class="icons-tue">
+            <i class="icon2"></i>
+            <p class="exp-temp-tues"></p>
+        </section>
+        <section>
+            <p class="wednesday"></p>
+            <i class="icon3"></i>
+            <p class="exp-temp-wed"></p>
+        </section>
+        <section>
+            <p class="thursday"></p>
+            <i class="icon4"></i>
+            <p class="exp-temp-thurs"></p>
+        </section>
+        <section>
+            <p class="friday"></p>
+            <i class="icon5"></i>
+            <p class="exp-temp-fri"></p>
+        </section>
+    </div>
+        </div>
+</body>
+</html>
