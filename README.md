@@ -1,1 +1,1 @@
- https://madihaparacha.github.io/weather-app/.
+https://madihaparacha.github.io/weather-updates/.
