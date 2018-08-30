@@ -2,7 +2,7 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 function getWeather() {
     document.querySelector(".weather-info").style.display = "block";
-    //document.querySelector(".header").style.display = "none";
+    document.querySelector(".header").style.display = "none";
     // document.querySelector(".weather-forecast").value;
     let cityName = document.querySelector("input").value;
     $.ajax({
