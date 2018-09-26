@@ -15,9 +15,9 @@ function getWeather() {
             let nighttime = new Date(data.sys.sunset * 1000);
 
             if (nighttime > date && daytime < date) {
-                document.querySelector("body").style["background-image"] = `url(Capture.png)`;
+                document.querySelector("body").style["background-color"] = `#546bab	`;
             } else {
-                document.querySelector("body").style["background-image"] = `url(Capture2.png)`;
+                document.querySelector("body").style["background-color"] = `#ffbe5c	`;
             }
             console.log(data);
             document.querySelector(".city-name").innerHTML = data.name;
