@@ -71,6 +71,14 @@ section {
     align-items: center;
     flex-direction:column;
 }
+.fa-github{
+  color: black;
+}
+.icon{
+  float: right;
+  font-size:50px;
+
+}
 
 
 
