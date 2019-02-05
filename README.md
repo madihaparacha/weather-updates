@@ -1,5 +1,5 @@
 ## You can search accurate weather and weekly forecast by using this app 
-https://madihaparacha.github.io/weather-updates/.
+https://madihaperacha.github.io/weather-updates/.
 
 # Ingredients
 To make this application, we need to cover the following topics:
